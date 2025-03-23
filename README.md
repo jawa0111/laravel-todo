@@ -1,4 +1,65 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Instructions
+Project Title:
+
+Laravel To-Do List
+
+Project Description:
+
+A simple To-Do List application built with Laravel. Allows users to add, mark, and delete tasks.
+
+Prerequisites:
+
+PHP (version 7.4 or higher)
+
+Composer (for managing dependencies)
+
+MySQL (or any database supported by Laravel)
+
+Clone the Repository:
+
+Run git clone https://github.com/jawa0111/laravel-todo.git
+
+Install Dependencies:
+
+Navigate to the project directory:
+cd laravel-todo
+
+Run:
+composer install
+
+Set Up Environment File:
+
+Copy .env.example to .env:
+cp .env.example .env
+
+Generate application key:
+php artisan key:generate
+
+Configure Database:
+
+Update .env file with database credentials:
+
+text
+Copy
+Edit
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+Run Migrations:
+
+Run:
+php artisan migrate
+
+Start the Development Server:
+
+Run:
+php artisan serve
+
+Application will be available at http://localhost:8000
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
